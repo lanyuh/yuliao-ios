@@ -1,0 +1,28 @@
+name: Yuliao
+options:
+  bundleIdPrefix: com.lanyu
+  deploymentTarget:
+    iOS: "13.0"
+  createIntermediateGroups: true
+
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    IPHONEOS_DEPLOYMENT_TARGET: "13.0"
+
+targets:
+  Yuliao:
+    type: application
+    platform: iOS
+    sources:
+      - path: Yuliao
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.lanyu.yuliao
+        PRODUCT_NAME: Yuliao
+        INFOPLIST_FILE: Yuliao/Info.plist
+        TARGETED_DEVICE_FAMILY: "1"
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: ""
+        ENABLE_BITCODE: "NO"
+        GENERATE_INFOPLIST_FILE: "NO"
